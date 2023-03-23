@@ -7,7 +7,7 @@ name: Docker
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "latest" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
     paths-ignore:
@@ -15,7 +15,7 @@ on:
       - LICENSE
       - README.md
   pull_request:
-    branches: [ "master" ]
+    branches: [ "latest" ]
     paths-ignore:
       - .gitignore
       - LICENSE
